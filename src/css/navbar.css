@@ -1,0 +1,72 @@
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .item a:hover, .item a:active {
+  color: var(--deepgray);
+  text-decoration: none;
+}
+
+.navbarWide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  --navbarheight: 55px;
+  height: var(--navbarheight);
+  background-color: white;
+}
+
+.navbarNarrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  --navbarheight: 55px;
+  height: var(--navbarheight);
+  background-color: white;
+}
+
+.navbar .flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: min(100%, 1000px);
+  height: var(--navbarheight);
+}
+
+.navbar .title {
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: calc(var(--navbarheight) * 0.4);
+}
+
+.navbarWide .item {
+  font-family: "SF-Pro-Display-Regular";
+  color: black;
+  font-size: calc(var(--navbarheight) * 0.3);
+}
+
+.navbarNarrow .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-right: calc(var(--navbarheight) * 0.3);
+}
+
+.navbarNarrow .menu {
+  width: 25px;
+}
+
+.navbar .button {
+  padding-left: calc(var(--navbarheight) * 0.3);
+  padding-right: calc(var(--navbarheight) * 0.3);
+}
