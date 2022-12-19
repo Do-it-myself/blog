@@ -1,13 +1,9 @@
-.dropDownMenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
-  position: "absolute";
-  top: -100%;
+.dropDownFlexBox {
+  position: sticky;
+  top: 0;
 }
 
-.dropDownMenuActive {
+.dropDownMenu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -19,8 +15,8 @@
   justify-content: flex-start;
 
   padding-left: 25px;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
 
   font-family: "SF-Pro-Display-Regular";
   color: black;

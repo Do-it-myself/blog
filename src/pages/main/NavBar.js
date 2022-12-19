@@ -35,25 +35,29 @@ export default function NavBar() {
       )}
       {isNarrow && (
         <div>
-          <nav className="navbarNarrow">
-            <div className="flexbox">
-              <div className="title">
-                <Link to="/blog" className="button">
-                  Do it Myself
-                </Link>
+          <nav className={click ? "navbarNarrowActive" : "navbarNarrow"}>
+            <div className="verticalflexbox">
+              <div className="flexbox">
+                <div className="title">
+                  <Link to="/blog" className="button">
+                    Do it Myself
+                  </Link>
+                </div>
+                <div className="item">
+                  <a onClick={handleClick}>
+                    <img
+                      src={require("../../assets/images/menu.png")}
+                      alt="menu"
+                      className="menu"
+                    />
+                  </a>
+                </div>
               </div>
-              <div className="item">
-                <a onClick={handleClick}>
-                <img
-                  src={require("../../assets/images/menu.png")}
-                  alt="menu"
-                  className="menu"
-                />
-                </a>
-              </div>
+              {click && (
+                  <DropDownMenu click={click} handleClick={handleClick} />
+                )}
             </div>
           </nav>
-          <DropDownMenu click={click} handleClick={handleClick}/>
         </div>
       )}
     </div>
