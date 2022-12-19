@@ -10,12 +10,34 @@
   height: var(--topboxHeight);
 }
 
+.homeNarrow .topbox {
+  background-color: var(--blue);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  --topboxWidth: 100%;
+  --topboxHeight: min(150vw,1050px);
+  width: var(--topboxWidth);
+  height: var(--topboxHeight);
+}
+
 .homeWide .topbox .flexbox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   --topboxWidth: min(100%, 1300px);
+  width: var(--topboxWidth);
+  height: var(--topboxHeight);
+}
+
+.homeNarrow .topbox .flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
   width: var(--topboxWidth);
   height: var(--topboxHeight);
 }
@@ -31,10 +53,28 @@
   width: min(50%, var(--topboxWidth)/2);
 }
 
+.homeNarrow .topbox .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: calc(var(--topboxWidth)*0.15);
+  padding-right: calc(var(--topboxWidth)*0.1);
+
+  width: calc(var(--toopboxWidth)*0.75);
+  height: calc(var(--topboxHeight)*0.5);
+}
+
 .homeWide .topbox .line1 {
   font-family: "SF-Pro-Display-Bold";
   color: black;
   font-size: calc(var(--topboxHeight)/10);
+}
+
+.homeNarrow .topbox .line1 {
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: calc(var(--topboxHeight)/20);
 }
 
 .homeWide .topbox .line2 {
@@ -44,10 +84,23 @@
   padding-bottom: calc(var(--topboxHeight)/60);
 }
 
+.homeNarrow .topbox .line2 {
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: calc(var(--topboxHeight)/15);
+  padding-bottom: calc(var(--topboxHeight)/100);
+}
+
 .homeWide .topbox .line3 {
   font-family: "SF-Pro-Display-Regular";
   color: black;
   font-size: calc(var(--topboxHeight)/25);
+}
+
+.homeNarrow .topbox .line3 {
+  font-family: "SF-Pro-Display-Regular";
+  color: black;
+  font-size: calc(var(--topboxHeight)/38);
 }
 
 .homeWide .topbox .logoRow {
@@ -58,12 +111,30 @@
   width: min(50%, var(--topboxWidth)/2);
 }
 
+.homeNarrow .topbox .logoRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: var(--topboxWidth);
+}
+
 .homeWide .topbox .logoCol {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
     --imageWidth: min(90%, var(--topboxWidth) * 0.9);
+    width: var(--imageWidth);
+    height: 100%;
+  }
+
+  .homeNarrow .topbox .logoCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    --imageWidth: calc(var(--topboxWidth) * 0.7);
     width: var(--imageWidth);
     height: 100%;
   }

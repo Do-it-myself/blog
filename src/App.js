@@ -9,11 +9,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 export default function App() {
-  const isSmall = useMediaQuery({query: "(max-width: 575px)"})
-  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  const isMobile = isSmall && isPortrait;
-  const isDesktop = !isMobile;
-
   return (
     <Router>
       <NavBar />
@@ -28,11 +23,6 @@ export default function App() {
           <Software />
         </Route>
       </Switch>
-      
-      <div>
-        {isDesktop && <p>Desktop view</p>}
-        {isMobile && <p>Mobile view</p>}
-      </div>
     </Router>
   );
 }
