@@ -61,7 +61,7 @@
   padding-left: calc(var(--topboxWidth)*0.15);
   padding-right: calc(var(--topboxWidth)*0.1);
 
-  width: calc(var(--toopboxWidth)*0.75);
+  width: calc(var(--topboxWidth)*0.75);
   height: calc(var(--topboxHeight)*0.5);
 }
 

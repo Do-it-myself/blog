@@ -1,0 +1,23 @@
+.homeWide .thingsDid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 100%;
+    --topboxHeight: min(50vw,700px);
+}
+
+.homeWide .thingsDid .horizontalFlexBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.homeWide .thingsDid .title {
+    font-family: "SF-Pro-Display-Bold";
+    color: black;
+    font-size: calc(var(--topboxHeight)/20);
+
+    padding-top: calc(var(--topboxHeight)/10);
+    padding-bottom: calc(var(--topboxHeight)/10);
+}

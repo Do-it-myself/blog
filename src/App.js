@@ -1,20 +1,28 @@
 import React from "react";
 
-import NavBar from "./pages/main/NavBar";
-import Home from "./pages/main/Home";
-import Hardware from "./pages/main/Hardware";
-import Software from "./pages/main/Software";
+import NavBarWide from "./pages/main/navbar/NavBarWide";
+import NavBarNarrow from "./pages/main/navbar/NavBarNarrow";
+import HomeWide from "./pages/main/home/HomeWide";
+import HomeNarrow from "./pages/main/home/HomeNarrow";
+import Hardware from "./pages/main/hardware/Hardware";
+import Software from "./pages/main/software/Software";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 export default function App() {
+  const homeIsNarrow = useMediaQuery({ query: "(max-aspect-ratio: 4/5)" });
+  const navBarIsNarrow = useMediaQuery({ query: "(max-width: 390px)" });
+
+
   return (
     <Router>
-      <NavBar />
+      {!navBarIsNarrow && <NavBarWide />}
+      {navBarIsNarrow && <NavBarNarrow />}
       <Switch>
         <Route exact path="/blog">
-          <Home />
+          {!homeIsNarrow && (<HomeWide />)}
+          {homeIsNarrow && (<HomeNarrow />)}
         </Route>
         <Route exact path="/blog/hardware">
           <Hardware />
