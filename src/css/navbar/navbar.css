@@ -3,6 +3,7 @@
   top: 0;
 
   filter: drop-shadow(0px 1px 1px var(--gray));
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar a {

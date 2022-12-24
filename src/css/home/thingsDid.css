@@ -1,10 +1,22 @@
+.homeWide .thingsDid a {
+    color: black;
+    text-decoration: none;
+  }
+
+
 .homeWide .thingsDid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+    width: 100%;
+}
+
+.homeWide .thingsDid .verticalFlexBox {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    width: 100%;
-    --topboxHeight: min(50vw,700px);
+    width: var(--topboxWidth);
 }
 
 .homeWide .thingsDid .horizontalFlexBox{
@@ -20,4 +32,60 @@
 
     padding-top: calc(var(--topboxHeight)/10);
     padding-bottom: calc(var(--topboxHeight)/10);
+}
+
+.homeWide .postList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: var(--topboxWidth);
+    margin-left: calc(var(--topboxWidth)*0.08);
+    margin-right: calc(var(--topboxWidth)*0.08);;
+}
+
+.homeWide .postMargin {
+    --postBoxWidth: calc(var(--topboxWidth)*0.35);
+    --borderRadius: calc(var(--topboxWidth)*0.02);
+
+    margin: calc(var(--postBoxWidth)*0.06);
+}
+
+.homeWide .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: var(--lightblue);
+
+    filter: drop-shadow(0px 0px 5px var(--shadowGray));
+
+    width: var(--postBoxWidth);
+    aspect-ratio: 500/371;
+
+    border-top-style: solid;
+    border-top-width: calc(var(--postBoxWidth)/50);
+    border-top-color: var(--blue);
+    border-radius: var(--borderRadius);
+}
+
+.homeWide .post .postTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    font-family: "SF-Pro-Display-Bold";
+    color: black;
+    font-size: calc(var(--postBoxWidth)/15);
+    
+    aspect-ratio: 500/90;
+}
+
+.homeWide .post .postImage {
+    width: var(--postBoxWidth);
+
+    border-bottom-left-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
 }

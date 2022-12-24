@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "title": "Hangman with Python",
+        "img": "",
+        "date": "26 Feb 2022"
+    },
+    {
+        "id": 1,
+        "title": "Barcode Scanner with Computer Vision",
+        "img": "",
+        "date": "27 Feb 2022"
+    },
+    {
+        "id": 2,
+        "title": "KwickLine - Queue Barrier",
+        "img": "/KwickLine_Queue_Barrier/main.jpg",
+        "date": "3 Apr 2022"
+    },
+    {
+        "id": 3,
+        "title": "OpenFitness",
+        "img": "/OpenFitness/main.jpg",
+        "date": "18 May 2022"
+    },
+    {
+        "id": 4,
+        "title": "PCB Keyboard & Mouse",
+        "img": "/PCB_Keyboard_and_Mouse/main.jpg",
+        "date": "18 July 2022"
+    },
+    {
+        "id": 5,
+        "title": "Light Sensor Firmware",
+        "img": "",
+        "date": "20 Aug 2022"
+    },
+    {
+        "id": 6,
+        "title": "Robotic Infinity Gauntlet",
+        "img": "/Robotic_Infinity_Gauntlet/main.jpg",
+        "date": "20 Aug 2022"
+    }
+]

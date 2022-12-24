@@ -1,7 +1,20 @@
-import React from 'react'
+import React from "react";
 
-export default function Post() {
+import { Link } from "react-router-dom";
+
+export default function Post({ content }) {
   return (
-    <div>Post</div>
-  )
+    <div className="postMargin">
+      <Link to="/blog/software" className="button">
+        <div className="post">
+          <div className="postTitle">{content["title"]}</div>
+          <img
+            src={require("../../posts" + content["img"])}
+            alt="main"
+            className="postImage"
+          />
+        </div>
+      </Link>
+    </div>
+  );
 }

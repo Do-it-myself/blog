@@ -1,3 +1,13 @@
+.homeWide {
+  --topboxWidth: min(100vw, 1300px);
+  --topboxHeight: min(50vw,700px);
+}
+
+.homeNarrow {
+  --topboxWidth: 100%;
+  --topboxHeight: min(150vw,1050px);
+}
+
 .homeWide .topbox {
   background-color: var(--blue);
 
@@ -6,7 +16,6 @@
   justify-content: center;
 
   width: 100%;
-  --topboxHeight: min(50vw,700px);
   height: var(--topboxHeight);
 }
 
@@ -17,8 +26,6 @@
   flex-direction: row;
   justify-content: center;
 
-  --topboxWidth: 100%;
-  --topboxHeight: min(150vw,1050px);
   width: var(--topboxWidth);
   height: var(--topboxHeight);
 }
@@ -28,7 +35,6 @@
   flex-direction: row;
   justify-content: space-between;
 
-  --topboxWidth: min(100%, 1300px);
   width: var(--topboxWidth);
   height: var(--topboxHeight);
 }

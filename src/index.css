@@ -24,6 +24,7 @@
   --backgroundblue: #F1F7FF;
   --deepgray: #6F6F6F;
   --gray: #EDEDED;
+  --shadowGray: rgb(185, 185, 185);
 }
 
 @import "./css/navbar/dropdownmenu.css";
