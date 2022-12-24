@@ -1,5 +1,6 @@
 .navbar {
   position: sticky;
+  z-index: 1;
   top: 0;
 
   filter: drop-shadow(0px 1px 1px var(--gray));
