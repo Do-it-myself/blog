@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
     width: var(--topboxWidth);
     max-width: 100%;
 }
@@ -36,16 +36,16 @@
     font-size: calc(var(--topboxHeight)/20);
 
     padding-top: calc(var(--topboxHeight)/10);
-    padding-bottom: calc(var(--topboxHeight)/10);
+    padding-bottom: calc(var(--topboxHeight)/15);
 }
 
 .homeNarrow .thingsDid .title {
     font-family: "SF-Pro-Display-Bold";
     color: black;
-    font-size: calc(var(--topboxHeight)/30);
+    font-size: calc(var(--topboxHeight)/25);
 
-    padding-top: calc(var(--topboxHeight)/15);
-    padding-bottom: calc(var(--topboxHeight)/15);
+    padding-top: calc(var(--topboxHeight)/13);
+    padding-bottom: calc(var(--topboxHeight)/20);
 }
 
 .homeWide .postList, .homeNarrow .postList {

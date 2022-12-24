@@ -1,11 +1,11 @@
 .homeWide {
-  --topboxWidth: min(90vw, 1300px);
-  --topboxHeight: min(50vw,700px);
+  --topboxWidth: var(--wideBoxWidth);
+  --topboxHeight: var(--wideBoxHeight);
 }
 
 .homeNarrow {
-  --topboxWidth: 100vw;
-  --topboxHeight: min(150vw,1050px);
+  --topboxWidth: var(--narrowBoxWidth);
+  --topboxHeight: var(--narrowBoxHeight);
 }
 
 .homeWide .topbox {

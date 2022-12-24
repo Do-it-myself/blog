@@ -25,9 +25,16 @@
   --deepgray: #6F6F6F;
   --gray: #EDEDED;
   --shadowGray: rgb(185, 185, 185);
+
+  --wideBoxWidth: min(100vw, 1300px);
+  --wideBoxHeight: min(50vw, 650px);
+  --wideBarWidth: min(100vw, 1000px);
+  --narrowBoxWidth: 100vw;
+  --narrowBoxHeight: 130vw;
 }
 
 @import "./css/navbar/dropdownmenu.css";
 @import "./css/navbar/navbar.css";
+@import "./css/bottombar/bottombar.css";
 @import "./css/home/topBox.css";
 @import "./css/home/thingsDid.css";
