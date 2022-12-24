@@ -29,8 +29,17 @@
   --wideBoxWidth: min(100vw, 1300px);
   --wideBoxHeight: min(50vw, 650px);
   --wideBarWidth: min(100vw, 1000px);
+  --navbarheight: 55px;
   --narrowBoxWidth: 100vw;
   --narrowBoxHeight: 130vw;
+}
+
+.mainWide {
+  min-height: calc(100vh - calc(var(--wideBarWidth)/24) - calc(var(--wideBarWidth)/18));
+}
+
+.mainNarrow {
+  min-height: calc(100vh - calc(var(--wideBarWidth)/24) - calc(var(--wideBarWidth)/9));
 }
 
 @import "./css/navbar/dropdownmenu.css";

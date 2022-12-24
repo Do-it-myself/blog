@@ -24,7 +24,6 @@
   align-items: center;
 
   width: 100%;
-  --navbarheight: 55px;
   height: var(--navbarheight);
   background-color: white;
 }
@@ -36,7 +35,6 @@
   align-items: center;
 
   width: 100%;
-  --navbarheight: 55px;
   height: var(--navbarheight);
   background-color: white;
 }

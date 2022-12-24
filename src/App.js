@@ -18,23 +18,26 @@ export default function App() {
 
 
   return (
-    <Router>
-      {!navBarIsNarrow && <NavBarWide />}
-      {navBarIsNarrow && <NavBarNarrow />}  
-      <Switch>
-        <Route exact path="/blog">
-          {!homeIsNarrow && (<HomeWide />)}
-          {homeIsNarrow && (<HomeNarrow />)}
-        </Route>
-        <Route exact path="/blog/hardware">
-          <Hardware />
-        </Route>
-        <Route exact path="/blog/software">
-          <Software />
-        </Route>
-      </Switch>
-      {!homeIsNarrow && <BottomBarWide />}
-      {homeIsNarrow && <BottomBarNarrow />} 
-    </Router>
+      <Router>
+        <div className={homeIsNarrow ? "mainNarrow" : "mainWide"}>
+        {!navBarIsNarrow && <NavBarWide />}
+        {navBarIsNarrow && <NavBarNarrow />}
+        <Switch>
+          <Route exact path="/blog">
+            {!homeIsNarrow && (<HomeWide />)}
+            {homeIsNarrow && (<HomeNarrow />)}
+          </Route>
+          <Route exact path="/blog/hardware">
+            <Hardware />
+          </Route>
+          <Route exact path="/blog/software">
+            <Software />
+          </Route>
+        </Switch>
+        </div>
+        {!homeIsNarrow && <BottomBarWide />}
+        {homeIsNarrow && <BottomBarNarrow />} 
+      </Router>
+   
   );
 }
