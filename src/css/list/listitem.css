@@ -46,7 +46,7 @@
 }
 
 .itemMargin .itemImage {
-  height: 100%;
+  height: calc(var(--listItemWidth) / 6);
   border-radius: calc(var(--borderRadius) / 2);
 }
 
