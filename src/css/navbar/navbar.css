@@ -4,7 +4,6 @@
   top: 0;
 
   filter: drop-shadow(0px 1px 1px var(--gray));
-  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar a {
@@ -12,7 +11,8 @@
   text-decoration: none;
 }
 
-.navbar .item a:hover, .item a:active {
+.navbar .item a:hover,
+.item a:active {
   color: var(--deepgray);
   text-decoration: none;
 }
@@ -24,7 +24,7 @@
   align-items: center;
 
   width: 100%;
-  height: var(--navbarheight);
+  height: var(--navbarHeight);
   background-color: white;
 }
 
@@ -35,18 +35,18 @@
   align-items: center;
 
   width: 100%;
-  height: var(--navbarheight);
+  height: var(--navbarHeight);
   background-color: white;
 }
 
-.navbarNarrowActive{
+.navbarNarrowActive {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
   width: 100%;
-  --navbarheight: 55px;
+  --navbarHeight: 55px;
   height: 130px;
   background-color: white;
 }
@@ -59,16 +59,17 @@
 
   width: var(--wideBarWidth);
   max-width: 100%;
-  height: var(--navbarheight);
+  height: var(--navbarHeight);
 }
 
 .navbar .title {
   font-family: "SF-Pro-Display-Bold";
   color: black;
-  font-size: calc(var(--navbarheight) * 0.4);
+  font-size: calc(var(--navbarHeight) * 0.4);
 }
 
-.navbarNarrow .verticalflexbox, .navbarNarrowActive .verticalflexbox {
+.navbarNarrow .verticalflexbox,
+.navbarNarrowActive .verticalflexbox {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -80,25 +81,27 @@
 .navbarWide .item {
   font-family: "SF-Pro-Display-Regular";
   color: black;
-  font-size: calc(var(--navbarheight) * 0.3);
+  font-size: calc(var(--navbarHeight) * 0.3);
 }
 
-.navbarNarrow .item, .navbarNarrowActive .item  {
+.navbarNarrow .item,
+.navbarNarrowActive .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  margin-left: calc(var(--navbarheight) * 0.3);  
-  margin-right: calc(var(--navbarheight) * 0.3);
+  margin-left: calc(var(--navbarHeight) * 0.3);
+  margin-right: calc(var(--navbarHeight) * 0.3);
 }
 
-.navbarNarrow .menu, .navbarNarrowActive .menu {
+.navbarNarrow .menu,
+.navbarNarrowActive .menu {
   width: 25px;
 }
 
 .navbar .button {
-  padding-top: calc(var(--navbarheight) * 0.25);
-  padding-bottom: calc(var(--navbarheight) * 0.25);
-  padding-left: calc(var(--navbarheight) * 0.3);
-  padding-right: calc(var(--navbarheight) * 0.3);
+  padding-top: calc(var(--navbarHeight) * 0.25);
+  padding-bottom: calc(var(--navbarHeight) * 0.25);
+  padding-left: calc(var(--navbarHeight) * 0.3);
+  padding-right: calc(var(--navbarHeight) * 0.3);
 }

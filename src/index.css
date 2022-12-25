@@ -1,45 +1,53 @@
 @font-face {
   font-family: "SF-Pro-Display-Regular";
-  src: url('./assets/fonts/SF-Pro-Display-Regular.ttf')
+  src: url("./assets/fonts/SF-Pro-Display-Regular.ttf");
 }
 
 @font-face {
   font-family: "SF-Pro-Display-Semibold";
-  src: url('./assets/fonts/SF-Pro-Display-Semibold.ttf')
+  src: url("./assets/fonts/SF-Pro-Display-Semibold.ttf");
 }
 
 @font-face {
   font-family: "SF-Pro-Display-Bold";
-  src: url('./assets/fonts/SF-Pro-Display-Bold.ttf')
+  src: url("./assets/fonts/SF-Pro-Display-Bold.ttf");
 }
 
 * {
   margin: 0px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
-  --deepblue: #BEDCFF;
-  --blue: #D8EAFF;
-  --lightblue: #F2F8FF;
-  --backgroundblue: #F1F7FF;
-  --deepgray: #6F6F6F;
-  --gray: #EDEDED;
-  --shadowGray: rgb(185, 185, 185);
+  --deepblue: #bedcff;
+  --blue: #d8eaff;
+  --lightblue: #f2f8ff;
+  --backgroundblue: #f1f7ff;
+  --deepgray: #b0b0b0;
+  --gray: #ededed;
+  --shadowgray: rgb(185, 185, 185);
 
   --wideBoxWidth: min(100vw, 1300px);
   --wideBoxHeight: min(50vw, 650px);
   --wideBarWidth: min(100vw, 1000px);
-  --navbarheight: 55px;
+  --narrowBarWidth: 100vw;
+  --listWideWidth: min(100vw, 1000px);
+  --listNarrowWidth: 100vw;
+  --navbarHeight: 55px;
   --narrowBoxWidth: 100vw;
   --narrowBoxHeight: 130vw;
 }
 
 .mainWide {
-  min-height: calc(100vh - calc(var(--wideBarWidth)/24) - calc(var(--wideBarWidth)/18));
+  min-height: calc(
+    100vh  - calc(var(--wideBarWidth) / 18)
+  );
 }
 
 .mainNarrow {
-  min-height: calc(100vh - calc(var(--wideBarWidth)/24) - calc(var(--wideBarWidth)/9));
+  min-height: calc(
+    100vh - calc(var(--wideBarWidth) / 9)
+  );
 }
 
 @import "./css/navbar/dropdownmenu.css";
@@ -47,3 +55,5 @@
 @import "./css/bottombar/bottombar.css";
 @import "./css/home/topBox.css";
 @import "./css/home/thingsDid.css";
+@import "./css/list/list.css";
+@import "./css/list/listitem.css";

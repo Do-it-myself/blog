@@ -4,13 +4,13 @@ import FlatList from "flatlist-react";
 import Post from "./Post";
 
 const renderPost = (content) => {
-  return <Post content={content} />;
+  return <Post key={content["id"]} content={content} />;
 };
-
 
 export default function Home() {
   let postJSON = require("../../posts/Posts.json");
-  const postList = [postJSON[6], postJSON[3], postJSON[4], postJSON[2]];
+  const length = postJSON.length
+  const postList = [postJSON[length-7], postJSON[length-4], postJSON[length-5], postJSON[length-3]];
   
   return (
     <div>

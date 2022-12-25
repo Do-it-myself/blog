@@ -1,51 +1,58 @@
 [
     {
-        "id": 0,
-        "title": "Hangman with Python",
-        "img": "",
-        "category": "software",
-        "date": "26 Feb 2022"
-    },
-    {
-        "id": 1,
-        "title": "Barcode Scanner with Computer Vision",
-        "img": "",
-        "category": "software",
-        "date": "27 Feb 2022"
-    },
-    {
-        "id": 2,
-        "title": "KwickLine - Queue Barrier",
-        "img": "/KwickLine_Queue_Barrier/main.jpg",
+        "id": 6,
+        "title": "Robotic Infinity Gauntlet",
+        "dir": "/Robotic_Infinity_Gauntlet",
+        "summary": "A robot arm controlled with computer vision",
         "category": "hardware",
-        "date": "3 Apr 2022"
-    },
-    {
-        "id": 3,
-        "title": "OpenFitness",
-        "img": "/OpenFitness/main.jpg",
-        "category": "software",
-        "date": "18 May 2022"
-    },
-    {
-        "id": 4,
-        "title": "PCB Keyboard & Mouse",
-        "img": "/PCB_Keyboard_and_Mouse/main.jpg",
-        "category": "hardware",
-        "date": "18 July 2022"
+        "date": "Aug 20, 2022"
     },
     {
         "id": 5,
         "title": "Light Sensor Firmware",
-        "img": "",
+        "dir": "/Light_Sensor_Firmware",
+        "summary" : "",
         "category": "hardware",
-        "date": "20 Aug 2022"
+        "date": "Aug 20, 2022"
     },
     {
-        "id": 6,
-        "title": "Robotic Infinity Gauntlet",
-        "img": "/Robotic_Infinity_Gauntlet/main.jpg",
+        "id": 4,
+        "title": "PCB Keyboard & Mouse",
+        "dir": "/PCB_Keyboard_and_Mouse",
+        "summary" : "",
         "category": "hardware",
-        "date": "20 Aug 2022"
+        "date": "July 18, 2022"
+    },
+    {
+        "id": 3,
+        "title": "OpenFitness",
+        "dir": "/OpenFitness",
+        "summary": "A gamified sports-based social network",
+        "category": "software",
+        "date": "May 18, 2022"
+    },
+    {
+        "id": 2,
+        "title": "KwickLine - Queue Barrier",
+        "dir": "/KwickLine_Queue_Barrier",
+        "summary" : "",
+        "category": "hardware",
+        "date": "Apr 3, 2022"
+    },
+    {
+        "id": 1,
+        "title": "Barcode Scanner with Computer Vision",
+        "dir": "/Barcode_Scanner_with_Computer_Vision",
+        "summary" : "",
+        "category": "software",
+        "date": "Feb 27, 2022"
+    },
+    {
+        "id": 0,
+        "title": "Hangman with Python",
+        "dir": "/Hangman_with_Python",
+        "summary" : "",
+        "category": "software",
+        "date": "Feb 26, 2022"
     }
 ]

@@ -9,7 +9,7 @@ export default function Post({ content }) {
         <div className="post">
           <div className="postTitle">{content["title"]}</div>
           <img
-            src={require("../../posts" + content["img"])}
+            src={require("../../posts" + content["dir"] + "/main.jpg")}
             alt="main"
             className="postImage"
           />

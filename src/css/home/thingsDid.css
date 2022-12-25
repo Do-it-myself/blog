@@ -1,114 +1,120 @@
-.homeWide .thingsDid a, .homeNarrow .thingsDid a {
-    color: black;
-    text-decoration: none;
-  }
-
-
-.homeWide .thingsDid, .homeNarrow .thingsDid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  
-    width: 100%;
+.homeWide .thingsDid a,
+.homeNarrow .thingsDid a {
+  color: black;
+  text-decoration: none;
 }
 
-.homeWide .thingsDid .verticalFlexBox, .homeNarrow .thingsDid .verticalFlexBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.homeWide .thingsDid,
+.homeNarrow .thingsDid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    width: var(--topboxWidth);
-    max-width: 100%;
+  width: 100%;
 }
 
-.homeWide .thingsDid .horizontalFlexBox, .homeNarrow .thingsDid .horizontalFlexBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    width: 100vw;
-    max-width: 100%;
+.homeWide .thingsDid .verticalFlexBox,
+.homeNarrow .thingsDid .verticalFlexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: var(--topboxWidth);
+  max-width: 100%;
+}
+
+.homeWide .thingsDid .horizontalFlexBox,
+.homeNarrow .thingsDid .horizontalFlexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100vw;
+  max-width: 100%;
 }
 
 .homeWide .thingsDid .title {
-    font-family: "SF-Pro-Display-Bold";
-    color: black;
-    font-size: calc(var(--topboxHeight)/20);
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: calc(var(--topboxHeight) / 20);
 
-    padding-top: calc(var(--topboxHeight)/10);
-    padding-bottom: calc(var(--topboxHeight)/15);
+  padding-top: calc(var(--topboxHeight) / 10);
+  padding-bottom: calc(var(--topboxHeight) / 15);
 }
 
 .homeNarrow .thingsDid .title {
-    font-family: "SF-Pro-Display-Bold";
-    color: black;
-    font-size: calc(var(--topboxHeight)/25);
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: calc(var(--topboxHeight) / 25);
 
-    padding-top: calc(var(--topboxHeight)/13);
-    padding-bottom: calc(var(--topboxHeight)/20);
+  padding-top: calc(var(--topboxHeight) / 13);
+  padding-bottom: calc(var(--topboxHeight) / 20);
 }
 
-.homeWide .postList, .homeNarrow .postList {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    width: var(--topboxWidth);
-    max-width: 100%;
-    margin-left: calc(var(--topboxWidth)*0.08);
-    margin-right: calc(var(--topboxWidth)*0.08);
-}
+.homeWide .postList,
+.homeNarrow .postList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 
+  width: var(--topboxWidth);
+  max-width: 100%;
+  margin-left: calc(var(--topboxWidth) * 0.08);
+  margin-right: calc(var(--topboxWidth) * 0.08);
+}
 
 .homeWide .postMargin {
-    --postBoxWidth: calc(var(--topboxWidth)*0.35);
-    --borderRadius: calc(var(--topboxWidth)*0.02);
+  --postBoxWidth: calc(var(--topboxWidth) * 0.35);
+  --borderRadius: calc(var(--topboxWidth) * 0.02);
 
-    margin: calc(var(--postBoxWidth)*0.06);
+  margin: calc(var(--postBoxWidth) * 0.06);
 }
 
 .homeNarrow .postMargin {
-    --postBoxWidth: calc(var(--topboxWidth)*0.7);
-    --borderRadius: calc(var(--topboxWidth)*0.04);
+  --postBoxWidth: calc(var(--topboxWidth) * 0.7);
+  --borderRadius: calc(var(--topboxWidth) * 0.04);
 
-    margin: calc(var(--postBoxWidth)*0.06);
+  margin: calc(var(--postBoxWidth) * 0.06);
 }
 
-.homeWide .post, .homeNarrow .post {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.homeWide .post,
+.homeNarrow .post {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
-    background-color: var(--lightblue);
+  background-color: var(--lightblue);
 
-    filter: drop-shadow(0px 0px calc(var(--postBoxWidth)/80) var(--shadowGray));
+  filter: drop-shadow(0px 0px calc(var(--postBoxWidth) / 80) var(--shadowgray));
 
-    width: var(--postBoxWidth);
-    aspect-ratio: 500/371;
+  width: var(--postBoxWidth);
+  aspect-ratio: 500/371;
 
-    border-top-style: solid;
-    border-top-width: calc(var(--postBoxWidth)/50);
-    border-top-color: var(--blue);
-    border-radius: var(--borderRadius);
+  border-top-style: solid;
+  border-top-width: calc(var(--postBoxWidth) / 50);
+  border-top-color: var(--blue);
+  border-radius: var(--borderRadius);
 }
 
-.homeWide .post .postTitle, .homeNarrow .post .postTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.homeWide .post .postTitle,
+.homeNarrow .post .postTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
-    font-family: "SF-Pro-Display-Bold";
-    color: black;
-    font-size: calc(var(--postBoxWidth)/15);
-    
-    aspect-ratio: 500/90;
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: calc(var(--postBoxWidth) / 15);
+
+  aspect-ratio: 500/90;
 }
 
-.homeWide .post .postImage, .homeNarrow .post .postImage {
-    width: var(--postBoxWidth);
+.homeWide .post .postImage,
+.homeNarrow .post .postImage {
+  width: var(--postBoxWidth);
 
-    border-bottom-left-radius: var(--borderRadius);
-    border-bottom-right-radius: var(--borderRadius);
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
 }

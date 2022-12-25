@@ -3,8 +3,6 @@
     flex-direction: row;
     justify-content: center;
 
-    margin-top: calc(var(--wideBarWidth)/24);
-
     background-color: var(--blue);
 }
 
@@ -48,3 +46,6 @@
     padding-right: calc(var(--wideBarWidth)/40);
 }
 
+.bottombarMargin {
+  height: calc(var(--wideBarWidth)/24);
+}
