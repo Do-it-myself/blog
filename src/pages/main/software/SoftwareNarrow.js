@@ -24,6 +24,7 @@ export default function Software() {
         <div className="list">
           <FlatList list={postList} renderItem={renderListItem} />
         </div>
+        <div className="bottombarMarginNarrow"></div>
     </div>
   );
 }

@@ -23,9 +23,9 @@
     justify-content: center;
     align-items: center;
   
-    width: var(--wideBarWidth);
+    width: var(--narrowBarWidth);
     max-width: 100%;
-    height: calc(var(--wideBarWidth)/9);
+    height: calc(var(--narrowBarWidth)/9);
   }
 
 .bottombarWide .item {
@@ -40,12 +40,16 @@
 .bottombarNarrow .item {
     font-family: "SF-Pro-Display-Regular";
     color: black;
-    font-size: calc(var(--wideBarWidth)/30);
+    font-size: calc(var(--narrowBarWidth)/30);
 
-    padding-left: calc(var(--wideBarWidth)/40);
-    padding-right: calc(var(--wideBarWidth)/40);
+    padding-left: calc(var(--narrowBarWidth)/40);
+    padding-right: calc(var(--narrowBarWidth)/40);
 }
 
 .bottombarMargin {
-  height: calc(var(--wideBarWidth)/24);
+  height: calc(var(--wideBarWidth)/35);
+}
+
+.bottombarMarginNarrow {
+  height: calc(var(--narrowBarWidth)/17);
 }

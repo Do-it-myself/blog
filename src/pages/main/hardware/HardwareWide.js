@@ -28,6 +28,7 @@ export default function Hardware() {
         </div>
         <div className="list">
           <FlatList list={postList} renderItem={renderListItem}/>
+          <div className="bottombarMargin"></div>
         </div>
       </div>
     </div>

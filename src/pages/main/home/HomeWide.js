@@ -48,8 +48,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bottombarMargin"></div>
       </div>
+      <div className="bottombarMargin"></div>
     </div>
   );
 }

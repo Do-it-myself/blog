@@ -8,6 +8,9 @@ export default function NavBar() {
   const handleClick = () => {
     setClick(!click);
   };
+  const handleTitleClick = () => {
+    setClick(false);
+  };
   return (
     <div className="navbar">
         <div>
@@ -15,7 +18,7 @@ export default function NavBar() {
             <div className="verticalflexbox">
               <div className="flexbox">
                 <div className="title">
-                  <Link to="/blog" className="button">
+                  <Link to="/blog" className="button" onClick={handleTitleClick}>
                     Do it Myself
                   </Link>
                 </div>
