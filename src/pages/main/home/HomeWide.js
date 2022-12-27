@@ -9,8 +9,8 @@ const renderPost = (content) => {
 
 export default function Home() {
   let postJSON = require("../../posts/Posts.json");
-  const length = postJSON.length
-  const postList = [postJSON[length-7], postJSON[length-4], postJSON[length-5], postJSON[length-3]];
+  let reversedJSON = [...postJSON].reverse();
+  const postList = [reversedJSON[6], reversedJSON[3], reversedJSON[4], reversedJSON[2]];
 
   return (
     <div>

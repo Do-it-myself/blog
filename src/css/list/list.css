@@ -65,10 +65,20 @@
     margin-bottom: calc(var(--listNarrowWidth)/40); 
 }
 
-.listWide .imageCentre, .listNarrow .imageCentre {
+.listWide .imageCentre {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    height: calc(var(--listWideWidth)/10);
+}
+
+.listNarrow .imageCentre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    height: calc(var(--listWideWidth)/6);
 }
 
 .listWide .image {
