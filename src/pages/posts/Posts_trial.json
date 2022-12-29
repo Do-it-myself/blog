@@ -1,0 +1,10 @@
+[
+    {
+        "id": 6,
+        "title": "Robotic Infinity Gauntlet",
+        "dir": "/Robotic_Infinity_Gauntlet",
+        "summary": "A robot arm controlled with computer vision",
+        "category": "hardware",
+        "date": "Aug 20, 2022"
+    }
+]

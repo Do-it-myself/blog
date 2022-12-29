@@ -1,4 +1,5 @@
 import React from "react";
+import FlatList from "flatlist-react";
 
 import NavBarWide from "./pages/main/navbar/NavBarWide";
 import NavBarNarrow from "./pages/main/navbar/NavBarNarrow";
@@ -13,6 +14,22 @@ import BottomBarNarrow from "./pages/main/bottombar/BottomBarNarrow";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
+
+import Robotic_Infinity_Gauntlet from "./pages/posts/Robotic_Infinity_Gauntlet/Page";
+
+let routeImport = require("./pages/posts/Posts_trial.json");
+
+let routeList = [
+  { file: Robotic_Infinity_Gauntlet, obj: routeImport[0]}
+];
+
+const renderRoute = (post) => {
+  return (
+    <Route exact path={"/blog" + post.obj["dir"]}> 
+      { post.file }
+    </Route>
+  )
+};
 
 export default function App() {
   const homeIsNarrow = useMediaQuery({ query: "(max-aspect-ratio: 4/5)" });
@@ -36,6 +53,7 @@ export default function App() {
             {!homeIsNarrow && <SoftwareWide />}
             {homeIsNarrow && <SoftwareNarrow />}
           </Route>
+          <FlatList list={routeList} renderItem={renderRoute} />
         </Switch>
       </div>
       {!homeIsNarrow && <BottomBarWide />}
