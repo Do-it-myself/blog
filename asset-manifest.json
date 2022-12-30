@@ -1,7 +1,14 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.58281051.css",
-    "main.js": "/blog/static/js/main.fe1ba639.js",
+    "main.css": "/blog/static/css/main.6c76a005.css",
+    "main.js": "/blog/static/js/main.82ed1f5e.js",
+    "static/js/784.7527cd2f.chunk.js": "/blog/static/js/784.7527cd2f.chunk.js",
+    "static/js/247.c5b63e21.chunk.js": "/blog/static/js/247.c5b63e21.chunk.js",
+    "static/js/271.b0ad2f28.chunk.js": "/blog/static/js/271.b0ad2f28.chunk.js",
+    "static/js/220.232974b7.chunk.js": "/blog/static/js/220.232974b7.chunk.js",
+    "static/js/883.4ac7a143.chunk.js": "/blog/static/js/883.4ac7a143.chunk.js",
+    "static/js/466.cbfa8648.chunk.js": "/blog/static/js/466.cbfa8648.chunk.js",
+    "static/js/399.4ab039eb.chunk.js": "/blog/static/js/399.4ab039eb.chunk.js",
     "static/media/main.jpg": "/blog/static/media/main.4137e99a1e3253ee7d28.jpg",
     "static/media/SF-Pro-Display-Bold.ttf": "/blog/static/media/SF-Pro-Display-Bold.09823f23366c566c9c58.ttf",
     "static/media/SF-Pro-Display-Semibold.ttf": "/blog/static/media/SF-Pro-Display-Semibold.7c7f0ea67accd424999c.ttf",
@@ -10,11 +17,18 @@
     "static/media/robot.png": "/blog/static/media/robot.ab1f5d284516d31b2513.png",
     "static/media/software.png": "/blog/static/media/software.0c5ac0ce8c144c07a59b.png",
     "index.html": "/blog/index.html",
-    "main.58281051.css.map": "/blog/static/css/main.58281051.css.map",
-    "main.fe1ba639.js.map": "/blog/static/js/main.fe1ba639.js.map"
+    "main.6c76a005.css.map": "/blog/static/css/main.6c76a005.css.map",
+    "main.82ed1f5e.js.map": "/blog/static/js/main.82ed1f5e.js.map",
+    "784.7527cd2f.chunk.js.map": "/blog/static/js/784.7527cd2f.chunk.js.map",
+    "247.c5b63e21.chunk.js.map": "/blog/static/js/247.c5b63e21.chunk.js.map",
+    "271.b0ad2f28.chunk.js.map": "/blog/static/js/271.b0ad2f28.chunk.js.map",
+    "220.232974b7.chunk.js.map": "/blog/static/js/220.232974b7.chunk.js.map",
+    "883.4ac7a143.chunk.js.map": "/blog/static/js/883.4ac7a143.chunk.js.map",
+    "466.cbfa8648.chunk.js.map": "/blog/static/js/466.cbfa8648.chunk.js.map",
+    "399.4ab039eb.chunk.js.map": "/blog/static/js/399.4ab039eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58281051.css",
-    "static/js/main.fe1ba639.js"
+    "static/css/main.6c76a005.css",
+    "static/js/main.82ed1f5e.js"
   ]
 }
