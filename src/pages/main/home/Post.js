@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Post({ content }) {
   return (
     <div className="postMargin">
-      <Link to="/blog/software" className="button">
+      <Link to={"/blog" + content["dir"]} className="button">
         <div className="post">
           <div className="postTitle">{content["title"]}</div>
           <img

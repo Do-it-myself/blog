@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import FlatList from "flatlist-react";
 
 import NavBarWide from "./pages/main/navbar/NavBarWide";
@@ -15,20 +15,26 @@ import BottomBarNarrow from "./pages/main/bottombar/BottomBarNarrow";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
-import Robotic_Infinity_Gauntlet from "./pages/posts/Robotic_Infinity_Gauntlet/Page";
+let postJSON = require("./pages/posts/Posts.json");
+let routeList = [];
 
-let routeImport = require("./pages/posts/Posts_trial.json");
-
-let routeList = [
-  { file: Robotic_Infinity_Gauntlet, obj: routeImport[0]}
-];
+for (const post of postJSON) {
+  const Page = lazy(() => import("./pages/posts" + post["dir"] + "/Page"));
+  const object = {
+    page: <Page />,
+    path: "/blog" + post["dir"],
+    id: post["id"],
+  };
+  routeList.push(object);
+}
 
 const renderRoute = (post) => {
+  console.log(post.page);
   return (
-    <Route exact path={"/blog" + post.obj["dir"]}> 
-      { post.file }
+    <Route key={post.id} exact path={post.path}>
+      {post.page}
     </Route>
-  )
+  );
 };
 
 export default function App() {
@@ -46,14 +52,16 @@ export default function App() {
             {homeIsNarrow && <HomeNarrow />}
           </Route>
           <Route exact path="/blog/hardware">
-          {!homeIsNarrow && <HardwareWide />}
+            {!homeIsNarrow && <HardwareWide />}
             {homeIsNarrow && <HardwareNarrow />}
           </Route>
           <Route exact path="/blog/software">
             {!homeIsNarrow && <SoftwareWide />}
             {homeIsNarrow && <SoftwareNarrow />}
           </Route>
-          <FlatList list={routeList} renderItem={renderRoute} />
+          <Suspense fallback={<p>Loading</p>}>
+            <FlatList list={routeList} renderItem={renderRoute} />
+          </Suspense>
         </Switch>
       </div>
       {!homeIsNarrow && <BottomBarWide />}

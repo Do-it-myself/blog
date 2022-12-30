@@ -7,7 +7,7 @@ export default function NavBar() {
       <nav className="navbarWide">
         <div className="flexbox">
           <div className="title">
-            <Link to="/blog/Robotic_Infinity_Gauntlet" className="button">
+            <Link to="/blog" className="button">
               Do it Myself
             </Link>
           </div>
