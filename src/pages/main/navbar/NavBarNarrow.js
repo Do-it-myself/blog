@@ -18,7 +18,7 @@ export default function NavBar() {
             <div className="verticalflexbox">
               <div className="flexbox">
                 <div className="title">
-                  <Link to="/blog" className="button" onClick={handleTitleClick}>
+                  <Link to="/" className="button" onClick={handleTitleClick}>
                     Do it Myself
                   </Link>
                 </div>

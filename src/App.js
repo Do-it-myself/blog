@@ -23,7 +23,7 @@ for (const post of postJSON) {
   const Page = lazy(() => import("./pages/posts" + post["dir"] + "/Page"));
   const object = {
     page: <Page />,
-    path: "/blog" + post["dir"],
+    path: post["dir"],
     id: post["id"],
   };
   routeList.push(object);
@@ -43,20 +43,20 @@ export default function App() {
   const navBarIsNarrow = useMediaQuery({ query: "(max-width: 390px)" });
 
   return (
-    <Router>
+    <Router basename="/blog">
       <div className={homeIsNarrow ? "mainNarrow" : "mainWide"}>
         {!navBarIsNarrow && <NavBarWide />}
         {navBarIsNarrow && <NavBarNarrow />}
         <Switch>
-          <Route exact path="/blog">
+          <Route exact path="/">
             {!homeIsNarrow && <HomeWide />}
             {homeIsNarrow && <HomeNarrow />}
           </Route>
-          <Route exact path="/blog/hardware">
+          <Route exact path="/hardware">
             {!homeIsNarrow && <HardwareWide />}
             {homeIsNarrow && <HardwareNarrow />}
           </Route>
-          <Route exact path="/blog/software">
+          <Route exact path="/software">
             {!homeIsNarrow && <SoftwareWide />}
             {homeIsNarrow && <SoftwareNarrow />}
           </Route>

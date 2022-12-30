@@ -7,15 +7,15 @@ export default function NavBar() {
       <nav className="navbarWide">
         <div className="flexbox">
           <div className="title">
-            <Link to="/blog" className="button">
+            <Link to="/" className="button">
               Do it Myself
             </Link>
           </div>
           <div className="item">
-            <Link to="/blog/hardware" className="button">
+            <Link to="/hardware" className="button">
               Hardware{" "}
             </Link>
-            <Link to="/blog/software" className="button">
+            <Link to="/software" className="button">
               Software{" "}
             </Link>
           </div>

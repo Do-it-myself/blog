@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function ListItem({ content }) {
   return (
     <div className="itemMargin">
-      <Link to={"/blog" + content["dir"]} className="button">
+      <Link to={content["dir"]} className="button">
         <div className="listItem">
           <div className="padding">
             <div className="itemFlex">
