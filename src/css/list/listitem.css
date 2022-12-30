@@ -45,6 +45,15 @@
   margin: calc(var(--listItemWidth) / 30);
 }
 
+.itemMargin .itemFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  height: calc(var(--listItemWidth) / 6);
+  aspect-ratio: 16/9;
+}
+
 .itemMargin .itemImage {
   height: calc(var(--listItemWidth) / 6);
   border-radius: calc(var(--borderRadius) / 2);

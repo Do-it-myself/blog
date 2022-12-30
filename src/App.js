@@ -11,6 +11,7 @@ import SoftwareWide from "./pages/main/software/SoftwareWide";
 import SoftwareNarrow from "./pages/main/software/SoftwareNarrow";
 import BottomBarWide from "./pages/main/bottombar/BottomBarWide";
 import BottomBarNarrow from "./pages/main/bottombar/BottomBarNarrow";
+import Loading from "./pages/main/Loading";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
@@ -59,7 +60,7 @@ export default function App() {
             {!homeIsNarrow && <SoftwareWide />}
             {homeIsNarrow && <SoftwareNarrow />}
           </Route>
-          <Suspense fallback={<p>Loading</p>}>
+          <Suspense fallback={<Loading />}>
             <FlatList list={routeList} renderItem={renderRoute} />
           </Suspense>
         </Switch>

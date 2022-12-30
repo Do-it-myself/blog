@@ -8,7 +8,7 @@ export default function ListItem({ content }) {
       <Link to={"/blog" + content["dir"]} className="button">
         <div className="listItem">
           <div className="padding">
-            <div>
+            <div className="itemFlex">
               <img
                 src={require("../posts" + content["dir"] + "/main.jpg")}
                 alt="main"
