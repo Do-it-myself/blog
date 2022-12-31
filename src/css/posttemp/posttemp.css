@@ -34,12 +34,9 @@
 
   filter: drop-shadow(0px 0px calc(var(--postWidth) / 200) var(--shadowgray));
   background-color: white;
-
-  --padding: 40px;
-  --imageWidth: min(calc(var(--postWidth) - var(--padding) * 2), 500px);
 }
 
-.postflex .title {
+.postflex .posttitle {
   text-align: center;
 
   font-family: "SF-Pro-Display-Bold";
@@ -52,7 +49,7 @@
   padding-right: calc(var(--padding));
 }
 
-.postflex .summary {
+.postflex .postsummary {
   text-align: center;
 
   font-family: "SF-Pro-Display-Regular";

@@ -1,5 +1,30 @@
 .p {
   font-family: "SF-Pro-Display-Regular";
   color: black;
-  font-size: 18px;
+  font-size: 17px;
+
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+
+  padding-bottom: 28px;
+}
+
+.h1 {
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: 28px;
+
+  padding-bottom: 28px;
+}
+
+.imgElementFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  padding-bottom: 28px;
+}
+
+.imgElement {
+  width: var(--imageWidth);
 }

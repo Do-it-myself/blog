@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function H1() {
+export default function H1({ children }) {
   return (
-    <div>H1</div>
+    <div className="h1">{children}</div>
   )
 }

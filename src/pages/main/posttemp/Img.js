@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
 
-export default function Img() {
+export default function Img({ image }) {
   return (
-    <div>Img</div>
-  )
+    <div className="imgElementFlex">
+      <img
+        src={require("../../posts" + image)}
+        alt="blog"
+        className="imgElement"
+      />
+    </div>
+  );
 }

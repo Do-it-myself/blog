@@ -10,8 +10,8 @@ export default function PostTemp({ content, homeIsNarrow, next, children }) {
     <div className={homeIsNarrow ? "posttempNarrow" : "posttempWide"}>
       <div className="postflex">
         <div className="postbox">
-          <div className="title">{content["title"]}</div>
-          <div className="summary">{content["summary"]}</div>
+          <div className="posttitle">{content["title"]}</div>
+          <div className="postsummary">{content["summary"]}</div>
           <div className="postdate">{content["date"]}</div>
           <div className="imageflex">
             <img
