@@ -1,0 +1,28 @@
+.loading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--backgroundblue);
+}
+
+.loadingWide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(var(--minHeightWide) - var(--navbarHeight));
+}
+
+.loadingNarrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(var(--minHeightNarrow) - var(--navbarHeight));
+}
+
+.loadingWide .image {
+  width: 20vh;
+}
+
+.loadingNarrow .image {
+  width: 20vw;
+}

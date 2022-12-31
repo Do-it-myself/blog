@@ -1,5 +1,5 @@
 .listWide {
-    min-height: calc(100vh - calc(var(--wideBarWidth)/18) - var(--navbarHeight));;
+    min-height: calc(var(--minHeightWide) - var(--navbarHeight));;
     
     background: linear-gradient(90deg, var(--blue) 50%, var(--lightblue) 50%);
 
@@ -9,7 +9,7 @@
 }
 
 .listNarrow {
-    min-height: calc(100vh - calc(var(--narrowBarWidth)/9) - var(--navbarHeight));;
+    min-height: calc(var(--minHeightNarrow) - var(--navbarHeight));;
     
     background: linear-gradient(180deg, var(--blue) 40vw, var(--lightblue) 40vw);;
 

@@ -36,18 +36,17 @@
   --navbarHeight: 55px;
   --narrowBoxWidth: 100vw;
   --narrowBoxHeight: 130vw;
+
+  --minHeightWide: calc(100vh - calc(var(--wideBarWidth) / 18));
+  --minHeightNarrow: calc(100vh - calc(var(--wideBarWidth) / 9));
 }
 
 .mainWide {
-  min-height: calc(
-    100vh  - calc(var(--wideBarWidth) / 18)
-  );
+  min-height: var(--minHeightWide);
 }
 
 .mainNarrow {
-  min-height: calc(
-    100vh - calc(var(--wideBarWidth) / 9)
-  );
+  min-height: var(--minHeightNarrow);
 }
 
 @import "./css/navbar/dropdownmenu.css";
@@ -57,3 +56,4 @@
 @import "./css/home/thingsDid.css";
 @import "./css/list/list.css";
 @import "./css/list/listitem.css";
+@import "./css/loading.css";
