@@ -1,11 +1,11 @@
 import React from 'react'
 
-import PostTemp from "../../main/posttemp/PostTemp"
+import { PostTemp, P } from "../Element"
 
-export default function Page() {
+export default function Page(props) {
   return (
-    <PostTemp>
-        Robotic_Infinity_Gauntlet
+    <PostTemp {...props}>
+        <P>Hi</P>
     </PostTemp>
   )
 }

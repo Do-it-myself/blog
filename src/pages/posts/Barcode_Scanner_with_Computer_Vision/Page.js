@@ -2,10 +2,10 @@ import React from 'react'
 
 import PostTemp from "../../main/posttemp/PostTemp"
 
-export default function Page() {
+export default function Page(props) {
   return (
-    <PostTemp>
-        Barcode_Scanner_with_Computer_Vision
+    <PostTemp {...props}>
+        children
     </PostTemp>
   )
 }

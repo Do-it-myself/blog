@@ -1,0 +1,107 @@
+.posttempWide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  min-height: calc(var(--minHeightWide) - var(--navbarHeight));
+
+  background-color: var(--backgroundblue);
+}
+
+.posttempNarrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  min-height: calc(var(--minHeightNarrow) - var(--navbarHeight));
+
+  background-color: var(--backgroundblue);
+}
+
+.postflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: var(--postWidth);
+  --marginflex: min(2.5vw, 20px);
+  margin-top: var(--marginflex);
+  margin-bottom: var(--marginflex);
+}
+
+.postflex .postbox {
+  width: var(--postWidth);
+
+  filter: drop-shadow(0px 0px calc(var(--postWidth) / 200) var(--shadowgray));
+  background-color: white;
+
+  --padding: 40px;
+  --imageWidth: min(calc(var(--postWidth) - var(--padding) * 2), 500px);
+}
+
+.postflex .title {
+  text-align: center;
+
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: 28px;
+
+  padding-top: calc(var(--padding) * 1.5);
+  padding-bottom: calc(var(--padding) * 0.4);
+  padding-left: calc(var(--padding));
+  padding-right: calc(var(--padding));
+}
+
+.postflex .summary {
+  text-align: center;
+
+  font-family: "SF-Pro-Display-Regular";
+  color: black;
+  font-size: 18px;
+
+  padding-bottom: calc(var(--padding) * 0.5);
+  padding-left: calc(var(--padding));
+  padding-right: calc(var(--padding));
+}
+
+.postflex .postdate {
+  text-align: center;
+
+  font-family: "SF-Pro-Display-Regular";
+  color: var(--deepgray);
+  font-size: 15px;
+
+  padding-bottom: calc(var(--padding)*0.6);
+  padding-left: calc(var(--padding));
+  padding-right: calc(var(--padding));
+}
+
+.postflex .imageflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding-bottom: calc(var(--padding) * 0.5);
+}
+
+.postflex .image {
+  width: var(--imageWidth);
+}
+
+.postflex .children {
+  padding-left: calc(var(--padding));
+  padding-right: calc(var(--padding));
+  padding-top: calc(var(--padding) * 0.5);
+  padding-bottom: calc(var(--padding));
+}
+
+.postflex .readmore {
+  font-family: "SF-Pro-Display-Bold";
+  color: black;
+  font-size: calc(var(--postWidth)/25);
+
+  padding-top: calc(var(--postWidth)/20);
+  padding-bottom: calc(var(--postWidth)/90);
+
+  text-align: center;
+}

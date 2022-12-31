@@ -25,7 +25,7 @@
   --backgroundblue: #f1f7ff;
   --deepgray: #b0b0b0;
   --gray: #ededed;
-  --shadowgray: rgb(185, 185, 185);
+  --shadowgray: rgb(209, 209, 209);
 
   --wideBoxWidth: min(100vw, 1300px);
   --wideBoxHeight: min(50vw, 650px);
@@ -36,6 +36,7 @@
   --navbarHeight: 55px;
   --narrowBoxWidth: 100vw;
   --narrowBoxHeight: 130vw;
+  --postWidth: min(95vw, 720px);
 
   --minHeightWide: calc(100vh - calc(var(--wideBarWidth) / 18));
   --minHeightNarrow: calc(100vh - calc(var(--wideBarWidth) / 9));
@@ -56,4 +57,6 @@
 @import "./css/home/thingsDid.css";
 @import "./css/list/list.css";
 @import "./css/list/listitem.css";
+@import "./css/posttemp/posttemp.css";
+@import "./css/posttemp/element.css";
 @import "./css/loading.css";

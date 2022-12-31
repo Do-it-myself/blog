@@ -16,6 +16,17 @@
   margin-bottom: calc(var(--listItemWidth) / 40);
 }
 
+.postflex .itemMargin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  --listItemWidth: calc(var(--postWidth) * 0.85);
+  --borderRadius: calc(var(--postWidth) * 0.02);
+  margin-top: calc(var(--listItemWidth) / 40);
+  margin-bottom: calc(var(--listItemWidth) / 40);
+}
+
 .itemMargin a {
   color: black;
   text-decoration: none;

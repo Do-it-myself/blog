@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, cloneElement } from "react";
 import FlatList from "flatlist-react";
 
 import NavBarWide from "./pages/main/navbar/NavBarWide";
@@ -19,28 +19,30 @@ import { useMediaQuery } from "react-responsive";
 let postJSON = require("./pages/posts/Posts.json");
 let routeList = [];
 
-for (const post of postJSON) {
-  const Page = lazy(() => import("./pages/posts" + post["dir"] + "/Page"));
+for (let i = 0; i < postJSON.length; i++) {
+  const Page = lazy(() => import("./pages/posts" + postJSON[i]["dir"] + "/Page"));
+  const i_nxt = (i === postJSON.length - 1 ? 0 : i + 1);
+  const i_nxtnxt = (i_nxt === postJSON.length - 1 ? 0 : i_nxt + 1);
+
   const object = {
-    page: <Page />,
-    path: post["dir"],
-    id: post["id"],
+    page: <Page content={postJSON[i]} next={[i_nxt, i_nxtnxt]}/>,
+    path: postJSON[i]["dir"],
+    id: postJSON[i]["id"],
   };
   routeList.push(object);
 }
 
-const renderRoute = (post) => {
-  console.log(post.page);
-  return (
-    <Route key={post.id} exact path={post.path}>
-      {post.page}
-    </Route>
-  );
-};
-
 export default function App() {
   const homeIsNarrow = useMediaQuery({ query: "(max-aspect-ratio: 4/5)" });
   const navBarIsNarrow = useMediaQuery({ query: "(max-width: 390px)" });
+
+  const renderRoute = (post) => {
+    return (
+      <Route key={post.id} exact path={post.path}>
+        {cloneElement(post.page, {homeIsNarrow: homeIsNarrow})}
+      </Route>
+    );
+  };
 
   return (
     <Router basename="/blog">
@@ -60,7 +62,7 @@ export default function App() {
             {!homeIsNarrow && <SoftwareWide />}
             {homeIsNarrow && <SoftwareNarrow />}
           </Route>
-          <Suspense fallback={<Loading />}>
+          <Suspense fallback={<Loading homeIsNarrow={homeIsNarrow}/>}>
             <FlatList list={routeList} renderItem={renderRoute} />
           </Suspense>
         </Switch>

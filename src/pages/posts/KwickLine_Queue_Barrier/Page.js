@@ -2,10 +2,10 @@ import React from 'react'
 
 import PostTemp from "../../main/posttemp/PostTemp"
 
-export default function Page() {
+export default function Page(props) {
   return (
-    <PostTemp>
-        KwickLine_Queue_Barrier
+    <PostTemp {...props}>
+        children
     </PostTemp>
   )
 }

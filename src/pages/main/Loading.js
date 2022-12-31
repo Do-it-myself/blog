@@ -1,8 +1,6 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
 
-export default function Loading() {
-  const homeIsNarrow = useMediaQuery({ query: "(max-aspect-ratio: 4/5)" });
+export default function Loading({ homeIsNarrow }) {
 
   return (
     <div className="loading">
