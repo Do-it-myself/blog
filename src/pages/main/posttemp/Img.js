@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Img({ image }) {
+export default function Img({ content, image }) {
   return (
     <div className="imgElementFlex">
       <img
-        src={require("../../posts" + image)}
+        src={require("../../posts" + content["dir"] + "/pictures/" + image)}
         alt="blog"
         className="imgElement"
       />

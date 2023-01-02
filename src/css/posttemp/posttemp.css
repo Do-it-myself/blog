@@ -95,10 +95,10 @@
 .postflex .readmore {
   font-family: "SF-Pro-Display-Bold";
   color: black;
-  font-size: calc(var(--postWidth)/25);
+  font-size: max(calc(var(--postWidth)/25), 25px);
 
-  padding-top: calc(var(--postWidth)/20);
-  padding-bottom: calc(var(--postWidth)/90);
+  padding-top: max(calc(var(--postWidth)/15), 30px);
+  padding-bottom: max(calc(var(--postWidth)/35), 13px);
 
   text-align: center;
 }

@@ -1,11 +1,13 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 import ListItem from "../ListItem";
-
 let postJSON = require("../../posts/Posts.json");
 
+
 export default function PostTemp({ content, homeIsNarrow, next, children }) {
-  console.log(next);
+  const isSmall = useMediaQuery({ query: "(max-width: 550px)" });
+
   return (
     <div className={homeIsNarrow ? "posttempNarrow" : "posttempWide"}>
       <div className="postflex">
@@ -23,8 +25,10 @@ export default function PostTemp({ content, homeIsNarrow, next, children }) {
           <div className="children">{children} </div>
         </div>
         <div className="readmore">Read more</div>
+        <div className={isSmall ? "postSmall" : ""}>
         <ListItem key={postJSON[next[0]]["id"]} content={postJSON[next[0]]} />
         <ListItem key={postJSON[next[1]]["id"]} content={postJSON[next[1]]} />
+        </div>
       </div>
     </div>
   );
