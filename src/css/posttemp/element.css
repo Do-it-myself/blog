@@ -1,9 +1,8 @@
 .p, .href{
-  font-family: "SF-Pro-Display-Regular";
+  font-family: "SF-Pro-Text-Regular";
   color: black;
-  font-size: 17px;
+  font-size: 16px;
 
-  letter-spacing: 0.01em;
   line-height: 1.4;
 
   padding-bottom: 28px;
@@ -19,6 +18,31 @@
 .href a:hover, .href a:active {
   color: var(--deepgray);
   text-decoration: underline;
+}
+
+ol.ol {
+  font-family: "SF-Pro-Text-Regular";
+  color: black;
+  font-size: 16px;
+
+  line-height: 1.4;
+  
+  padding-bottom: 28px;
+
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+
+ul.ul {
+  font-family: "SF-Pro-Text-Regular";
+  color: black;
+  font-size: 16px;
+
+  line-height: 1.4;
+  
+  padding-bottom: 28px;
+
+  padding-left: 30px;
 }
 
 .h1 {
