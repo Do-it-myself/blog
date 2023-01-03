@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.891f47f5.css",
+    "main.css": "/blog/static/css/main.5e4140a6.css",
     "main.js": "/blog/static/js/main.9cf052cc.js",
     "static/js/784.7647d254.chunk.js": "/blog/static/js/784.7647d254.chunk.js",
     "static/js/247.769aa5ad.chunk.js": "/blog/static/js/247.769aa5ad.chunk.js",
@@ -21,7 +21,6 @@
     "static/media/Base.jpg": "/blog/static/media/Base.7ea78b72198739f3d5d2.jpg",
     "static/media/Rough_sketch.PNG": "/blog/static/media/Rough_sketch.7bb8b370109bfc5a1e96.PNG",
     "static/media/Business_model.PNG": "/blog/static/media/Business_model.caa8335617e17827ab07.PNG",
-    "static/media/SF-Pro-Text-Regular.ttf": "/blog/static/media/SF-Pro-Text-Regular.6c476e49e88b29f603fb.ttf",
     "static/media/OpenFitness.jpg": "/blog/static/media/OpenFitness.4137e99a1e3253ee7d28.jpg",
     "static/media/Hand_2.jpeg": "/blog/static/media/Hand_2.f9d24775a30d208c4bee.jpeg",
     "static/media/Hand_1.jpeg": "/blog/static/media/Hand_1.b87149340e4416408637.jpeg",
@@ -42,7 +41,7 @@
     "static/media/software.png": "/blog/static/media/software.0c5ac0ce8c144c07a59b.png",
     "static/media/Algorithm.PNG": "/blog/static/media/Algorithm.00335e91c4cbf58cde08.PNG",
     "index.html": "/blog/index.html",
-    "main.891f47f5.css.map": "/blog/static/css/main.891f47f5.css.map",
+    "main.5e4140a6.css.map": "/blog/static/css/main.5e4140a6.css.map",
     "main.9cf052cc.js.map": "/blog/static/js/main.9cf052cc.js.map",
     "784.7647d254.chunk.js.map": "/blog/static/js/784.7647d254.chunk.js.map",
     "247.769aa5ad.chunk.js.map": "/blog/static/js/247.769aa5ad.chunk.js.map",
@@ -52,7 +51,7 @@
     "466.5350dff2.chunk.js.map": "/blog/static/js/466.5350dff2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.891f47f5.css",
+    "static/css/main.5e4140a6.css",
     "static/js/main.9cf052cc.js"
   ]
 }
