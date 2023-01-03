@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[271],{1396:function(n,r,e){e.d(r,{Z:function(){return i}});e(2791);var u=e(184);function i(n){var r=n.children;return(0,u.jsxs)("div",{children:[" ",r," "]})}},3271:function(n,r,e){e.r(r),e.d(r,{default:function(){return c}});e(2791);var u=e(1396),i=e(184);function c(){return(0,i.jsx)(u.Z,{children:"KwickLine_Queue_Barrier"})}}}]);
-//# sourceMappingURL=271.b0ad2f28.chunk.js.map
