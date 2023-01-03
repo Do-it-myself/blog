@@ -1,31 +1,24 @@
 import React from "react";
-import YouTube from "react-youtube";
-
-const postWidth = Math.min(window.innerWidth * 0.95, 720);
-const padding = 40;
-const imageWidth = Math.round(Math.min(postWidth - padding * 2, 500));
-const imageHeight = Math.round((imageWidth * 9) / 16);
-
-console.log(imageWidth);
 
 export default function Youtube({ id }) {
-  const opts = {
-    height: imageHeight.toString(),
-    width: imageWidth.toString(),
-    playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
-    },
-  };
-
-  const onReady = (event) => {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-  };
-
+  const postWidth = Math.min(window.innerWidth * 0.95, 720);
+  const padding = 40;
+  const imageWidth = Math.round(Math.min(postWidth - padding * 2, 500));
+  const imageHeight = Math.round((imageWidth * 9) / 16);
+    
   return (
     <div className="youtubeElementFlex">
-      <YouTube videoId={id} opts={opts} onReady={onReady} />
+      <iframe
+        allowFullScreen="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        title="OpenFitness - Efficient Filter"
+        width={imageWidth.toString()}
+        height={imageHeight.toString()}
+        src={"https://www.youtube.com/embed/" + id + "?autoplay=0"}
+        id="widget4"
+        className="youtubeElement"
+      ></iframe>
     </div>
   );
 }
+

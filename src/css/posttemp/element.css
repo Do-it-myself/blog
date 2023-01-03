@@ -1,4 +1,4 @@
-.p {
+.p, .href{
   font-family: "SF-Pro-Display-Regular";
   color: black;
   font-size: 17px;
@@ -7,6 +7,18 @@
   line-height: 1.4;
 
   padding-bottom: 28px;
+  
+}
+
+.href a:link, .href a:visited {
+  color: var(--deepgray);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.href a:hover, .href a:active {
+  color: var(--deepgray);
+  text-decoration: underline;
 }
 
 .h1 {
@@ -35,4 +47,8 @@
 
 .imgElement {
   width: var(--imageWidth);
+}
+
+.youtubeElement {
+  border: 0px
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PostTemp, P, H1, H2, Img, Youtube } from "../Element";
+import { PostTemp, P, H1, H2, Href, Img, Youtube } from "../Element";
 
 export default function Page(props) {
   return (
@@ -70,7 +70,113 @@ export default function Page(props) {
         results for details, where information, photos, and reviews of the
         sports venue are all organized on one page.
       </P>
-      <Youtube id="WDIw7B_2k2A"/>
+      <Youtube id="WDIw7B_2k2A" />
+      <H2>Engaging – Gamification</H2>
+      <P>
+        Our gamification elements promote user engagement in doing sports. When
+        the user arrives at a sports venue, our app uses GPS to determine which
+        sports venue the user is currently at. Either the app detects the
+        closest sports venue, or the user could manually choose the locations.
+        Users can collect points every time they finish a sports session. The
+        number of points is calculated based on the duration of the session.
+        Users can level up after they’ve reached a certain number of points.
+        We’ve also introduced personal fitness goals for the user. The weekly
+        fitness tasks serve as short-term goals, while the badges serve as
+        long-term goals. Users can check their progress on their statistics
+        page. On the other hand, our leaderboard system promotes competition
+        among the user’s social group. The combination of short-term and
+        long-term goals drives users’ motivation and promotes long-term
+        engagement.
+      </P>
+      <Youtube id="JI04AgdDbQk" />
+      <H2>Personalized – Recommendation</H2>
+      <P>
+        Our app offers personalized recommendations on types of sports. Users’
+        scores are broken down into four categories. Our recommendations are
+        made based on scores in each category. If the user scores particularly
+        high on cardio, then our app predicts that they might prefer cardio
+        sports and recommends cardio to them. At the same time, if the user
+        scores particularly low on muscle strength, then our app may suggest
+        they try out activities that develop muscle strength. This dual
+        recommendation system provides the user with the option to either
+        develop their fitness “spike” (specialty) or go for balanced fitness
+        development.
+      </P>
+      <Youtube id="0XGpcGTuXxc" />
+      <H1>Conclusion</H1>
+      <P>
+        Tying back to our personal experiences with doing sports, the
+        gamification features would serve as a source of motivation and
+        accountability for my teammate to workout consistently. In addition,
+        using the search filter function, it will take much less time for me to
+        find sports venues that suit all of my friends’ fitness levels and
+        interests. The personalized recommendations can also give us ideas for
+        what new sports to try out the next time I meet with my friends.
+      </P>
+      <P>
+        Eventually, whether it’s university students, full-time workers, or just
+        anybody who wants to try out sports but doesn’t know where to start, all
+        Hongkongers can look for sports venues more efficiently and enjoy an
+        active lifestyle.
+      </P>
+      <H1>Development</H1>
+      <P>
+        We believe that our app has the potential to expand to a larger scale.
+        In terms of managing the database of sports venues, we’ve got an
+        excellent success story to draw from, which is the restaurant guide app
+        OpenRice. Similarly, for our gamification elements, we’ve got successful
+        study apps like Forest and YPT, which rank friends based on the number
+        of hours they’ve spent on studying. However, as our app allows user to
+        manually input their sports locations, there might be concerns that
+        users may fake sports sessions in order to score points and rank higher
+        on the leaderboard. However, these study apps show that users will be
+        unlikely to do so as they know this ultimately can’t help them fulfill
+        their main goal – for study apps, it’s to get good grades, while for
+        OpenFitness, it’s to maintain a healthy lifestyle.
+      </P>
+      <Img {...props} image="Business_model.PNG" />
+      <P>
+        Meanwhile, unlike Google Maps Reviews, since our app only focuses on
+        sports venues, we believe it’s much more feasible to maintain and
+        regulate the information provided by our search filter. Unlike Facebook
+        pages of sports venues, our app allows users to contribute directly to
+        the photos of the sports venues. Therefore, there will be both company
+        and user input to expand the database. In terms of user engagement, we
+        believe that the convenience provided by our app, in addition to the
+        bandwagon effect from our leaderboard ranking system, are strong pull
+        factors to use our app.
+      </P>
+      <Img {...props} image="Compare.PNG" />
+      <P>
+        In the future, more data could be covered by the app, such as
+        facilities, latest trends, and trainers testimonials, so that users
+        could have more information in mind when choosing the right venue. The
+        app could even collaborate with sports centers to allow users to book
+        their facilities and classes through our platform.
+      </P>
+      <P>
+        The app can also possibly be transformed into a social media platform
+        for all things sports-related. Not only can users write about their
+        opinions on sports venues and sports tips on their blogs, but also share
+        their snapshots of trying out different sports activities. A virtual
+        community for sports enthusiasts can then be gradually developed.
+      </P>
+      <H1>Impact</H1>
+      <P>
+        In the long run, we envision our app improving Hong Kong’s development
+        sustainability. Economically, success stories from other search filter
+        managing and gamification companies show this app development is a
+        viable business model, and this app is simultaneously a way to promote
+        the sports industry. Socially, we hope our app could develop a sports
+        community in Hong Kong and promote an active culture among Hongkongers,
+        eventually encouraging more and more to adopt healthy lifestyles.
+      </P>
+      <H1>Technologies</H1>
+      <P>The following shows the technologies used for this project.</P>
+      <Img {...props} image="Technologies.PNG" />
+      <H1>File</H1>
+      <P>React Native file:</P>
+      <Href>https://github.com/Do-it-myself/OpenFitness</Href>
     </PostTemp>
   );
 }

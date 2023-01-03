@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function Href() {
+export default function Href({ children }) {
   return (
-    <div>Href</div>
-  )
+    <div className="href">
+      <a href={children} target="_blank" rel="noopener noreferrer">{children}</a>
+    </div>
+  );
 }
