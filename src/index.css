@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "SF-Pro-Text-Regular";
-  src: url("./assets/fonts/SF-Pro-Text-Regular.ttf");
-}
-
-@font-face {
   font-family: "SF-Pro-Display-Regular";
   src: url("./assets/fonts/SF-Pro-Display-Regular.ttf");
 }
@@ -21,6 +16,7 @@
 * {
   margin: 0px;
   -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
 }
 
 :root {
