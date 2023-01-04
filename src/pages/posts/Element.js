@@ -6,4 +6,5 @@ export {default as Img} from "../main/posttemp/Img";
 export {default as P} from "../main/posttemp/P";
 export {default as OL} from "../main/posttemp/OL";
 export {default as UL} from "../main/posttemp/UL";
+export {default as Table} from "../main/posttemp/Table";
 export {default as Youtube} from "../main/posttemp/Youtube";

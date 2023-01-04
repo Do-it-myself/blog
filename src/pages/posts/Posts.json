@@ -11,7 +11,7 @@
         "id": 5,
         "title": "Light Sensor Firmware",
         "dir": "/Light_Sensor_Firmware",
-        "summary" : "",
+        "summary" : "A STM32-powered light sensor",
         "category": "hardware",
         "date": "Aug 20, 2022"
     },
@@ -19,7 +19,7 @@
         "id": 4,
         "title": "PCB Keyboard & Mouse",
         "dir": "/PCB_Keyboard_and_Mouse",
-        "summary" : "",
+        "summary" : "A simple Arduino HID device",
         "category": "hardware",
         "date": "July 18, 2022"
     },
@@ -35,7 +35,7 @@
         "id": 2,
         "title": "KwickLine - Queue Barrier",
         "dir": "/KwickLine_Queue_Barrier",
-        "summary" : "",
+        "summary" : "An adjustable, customisable queue barrier",
         "category": "hardware",
         "date": "Apr 3, 2022"
     },
@@ -43,7 +43,7 @@
         "id": 1,
         "title": "Barcode Scanner with Computer Vision",
         "dir": "/Barcode_Scanner_with_Computer_Vision",
-        "summary" : "",
+        "summary" : "A scanner powered by OpenCV & Pyzbar",
         "category": "software",
         "date": "Feb 27, 2022"
     },
@@ -51,7 +51,7 @@
         "id": 0,
         "title": "Hangman with Python",
         "dir": "/Hangman_with_Python",
-        "summary" : "",
+        "summary" : "A simple command-line hangman game",
         "category": "software",
         "date": "Feb 26, 2022"
     }
