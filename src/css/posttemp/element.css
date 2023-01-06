@@ -71,9 +71,16 @@ ul.ul {
   padding-bottom: 36px;
 }
 
-.imgElement {
-  width: var(--imageWidth);
+.imgEmbedFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.imgEmbedElement {
+  width: 100%;
+}
+
 
 .youtubeElement {
   border: 0px
@@ -89,6 +96,7 @@ ul.ul {
 
 table.table {
   width: var(--imageWidth);
+  table-layout: fixed;
   
   font-family: "SF-Pro-Display-Regular";
   color: black;
@@ -98,4 +106,5 @@ table.table {
 
 th {
   font-weight: normal;
+  overflow-wrap: break-word;
 }
