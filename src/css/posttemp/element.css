@@ -94,9 +94,9 @@ ul.ul {
   padding-bottom: 36px;
 }
 
-table.table {
+.table{
   width: var(--imageWidth);
-  table-layout: fixed;
+  table-layout: "fixed";
   
   font-family: "SF-Pro-Display-Regular";
   color: black;
@@ -104,7 +104,24 @@ table.table {
   letter-spacing: 0.01em;
 }
 
-th {
+.tableBorder{
+  width: var(--imageWidth);
+  table-layout: "fixed";
+  
+  font-family: "SF-Pro-Display-Regular";
+  color: black;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  
+  border: 0.25px solid black;
+  border-spacing: 0px;
+}
+
+.table th{
+  font-weight: normal;  
+}
+
+.tableBorder th {
   font-weight: normal;
-  overflow-wrap: break-word;
+  border: 0.25px solid black;
 }
