@@ -1,4 +1,5 @@
-.p, .href{
+.p,
+.href {
   font-family: "SF-Pro-Display-Regular";
   color: black;
   font-size: 17px;
@@ -9,13 +10,32 @@
   padding-bottom: 28px;
 }
 
-.href a:link, .href a:visited {
+a.hrefembed {
+  font-family: "SF-Pro-Display-Regular";
+  color: black;
+  font-size: 17px;
+
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+.href a:link,
+.href a:visited {
   color: var(--deepgray);
   text-decoration: none;
   word-break: break-all;
 }
 
-.href a:hover, .href a:active {
+a.hrefembed:link,
+a.hrefembed:visited {
+  color: var(--deepgray);
+  text-decoration: none;
+}
+
+.href a:hover,
+.href a:active,
+a.hrefembed:hover,
+a.hrefembed:active {
   color: var(--deepgray);
   text-decoration: underline;
 }
@@ -27,7 +47,7 @@ ol.ol {
 
   letter-spacing: 0.01em;
   line-height: 1.6;
-  
+
   padding-bottom: 28px;
 
   list-style-type: decimal;
@@ -41,7 +61,7 @@ ul.ul {
 
   letter-spacing: 0.01em;
   line-height: 1.6;
-  
+
   padding-bottom: 28px;
 
   padding-left: 30px;
@@ -63,11 +83,12 @@ ul.ul {
   padding-bottom: 28px;
 }
 
-.imgElementFlex, .youtubeElementFlex {
+.imgElementFlex,
+.youtubeElementFlex {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   padding-bottom: 36px;
 }
 
@@ -81,44 +102,43 @@ ul.ul {
   width: 100%;
 }
 
-
 .youtubeElement {
-  border: 0px
+  border: 0px;
 }
 
 .tableFlex {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   padding-bottom: 36px;
 }
 
-.table{
+.table {
   width: var(--imageWidth);
   table-layout: "fixed";
-  
+
   font-family: "SF-Pro-Display-Regular";
   color: black;
   font-size: 17px;
   letter-spacing: 0.01em;
 }
 
-.tableBorder{
+.tableBorder {
   width: var(--imageWidth);
   table-layout: "fixed";
-  
+
   font-family: "SF-Pro-Display-Regular";
   color: black;
   font-size: 17px;
   letter-spacing: 0.01em;
-  
+
   border: 0.25px solid black;
   border-spacing: 0px;
 }
 
-.table th{
-  font-weight: normal;  
+.table th {
+  font-weight: normal;
 }
 
 .tableBorder th {
